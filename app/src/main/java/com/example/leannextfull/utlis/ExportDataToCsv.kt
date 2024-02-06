@@ -72,7 +72,7 @@ object ExportDataToCsv {
     //Отправка в другое приложение
     fun SendOtherApp(context: Context,file: File)
     {
-        val uris = FileProvider.getUriForFile(context, "com.anni.shareimage.fileprovider", file)
+        val uris = FileProvider.getUriForFile(context, "com.example.leannextfull", file)
 
         val intent = Intent(Intent.ACTION_SEND)
         intent.putExtra(Intent.EXTRA_STREAM, uris)

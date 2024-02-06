@@ -43,7 +43,7 @@ abstract class MainDb : RoomDatabase() {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
                         MainDb::class.java,
-                        "leannext_full_1"
+                        "leannext_full"
                     )
                         .createFromAsset("leannext_default_full.db") //Направления и критерия заполнены по умолчанию
                         .build()
